@@ -23,5 +23,30 @@ public class HoaDon {
     public static class HoaDonHeader
     {
         String IDOder, Date, NameCustomer;
+
+        public HoaDonHeader() 
+        {
+        }
+        
+        public HoaDonHeader addIDOder(String IDOder)
+        {
+            this.IDOder = IDOder;
+            return this;
+        }
+        public HoaDonHeader addDate(String Date)
+        {
+            this.Date = Date;
+            return this;
+        }
+        public HoaDonHeader addNameCustomer(String NameCustomer)
+        {
+            this.NameCustomer = NameCustomer;
+            return this;
+        }
+        
+        public HoaDon build()
+        {
+            return new HoaDon(this);
+        }
     }
 }
