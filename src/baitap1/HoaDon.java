@@ -5,48 +5,52 @@
  */
 package baitap1;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Nhan
  */
 public class HoaDon {
-    String IDOder, Date, NameCustomer;
+    HoaDonHeader Hearder;
+    ArrayList<CTHD> CTHD;
+    
+   protected HoaDon (HoaDonBulder Builder)
+   {
+       this.CTHD = Builder.CTHD;
+       this.Hearder = Builder.Hearder; 
+   }
 
-    public HoaDon(HoaDonHeader builder) 
+    @Override
+    public String toString() {
+        return "HoaDon{" + "Hearder=" + Hearder + ", CTHD=" + CTHD + '}';
+    }
+   
+   public static class HoaDonBulder
+   {
+    HoaDonHeader Hearder;
+    ArrayList<CTHD> CTHD;
+
+        
+    public HoaDonBulder() 
     {
-        this.IDOder = builder.IDOder;
-        this.Date = builder.Date;
-        this.NameCustomer = builder.NameCustomer;
+       this.CTHD = new ArrayList<>();
     }
     
-    
-    public static class HoaDonHeader
-    {
-        String IDOder, Date, NameCustomer;
+    public HoaDonBulder addHoaDonHearder(HoaDonHeader Hearder)
+   {
+        this.Hearder = Hearder;
+        return this;
+   }
+    public HoaDonBulder addCTHD(CTHD CTHd)
+   {
+       this.CTHD.add(CTHd) ;
+       return this;
+   }
+    public HoaDon Build()
+   {
+       return new HoaDon(this);
+   }
+   }
 
-        public HoaDonHeader() 
-        {
-        }
-        
-        public HoaDonHeader addIDOder(String IDOder)
-        {
-            this.IDOder = IDOder;
-            return this;
-        }
-        public HoaDonHeader addDate(String Date)
-        {
-            this.Date = Date;
-            return this;
-        }
-        public HoaDonHeader addNameCustomer(String NameCustomer)
-        {
-            this.NameCustomer = NameCustomer;
-            return this;
-        }
-        
-        public HoaDon build()
-        {
-            return new HoaDon(this);
-        }
-    }
 }
