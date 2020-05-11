@@ -18,9 +18,36 @@ public class HoaDonHeader {
         this.NameCustomer = NameCustomer;
     }
 
+    public HoaDonHeader() {
+    }
+
+    public String getIDOder() {
+        return IDOder;
+    }
+
+    public void setIDOder(String IDOder) {
+        this.IDOder = IDOder;
+    }
+
+    public String getDate() {
+        return Date;
+    }
+
+    public void setDate(String Date) {
+        this.Date = Date;
+    }
+
+    public String getNameCustomer() {
+        return NameCustomer;
+    }
+
+    public void setNameCustomer(String NameCustomer) {
+        this.NameCustomer = NameCustomer;
+    }
+
     @Override
     public String toString() {
-        return "HoaDonHeader{" + "Mã Khách Hàng:=" + IDOder + ", Ngày bán:=" + Date + ", Họ tên khách hàng=" + NameCustomer + '}';
+        return "\n HoaDonHeader{" + "Mã Khách Hàng:=" + IDOder + ", Ngày bán:=" + Date + ", Họ tên khách hàng=" + NameCustomer + '}';
     }
     
     
