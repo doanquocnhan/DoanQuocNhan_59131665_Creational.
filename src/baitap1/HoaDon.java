@@ -13,29 +13,28 @@ import java.util.ArrayList;
  */
 public class HoaDon {
     HoaDonHeader Hearder;
-    ArrayList<CTHD> CTHD;
+    ArrayList<CTHD> dsCTHD = new ArrayList<>(); 
     
    protected HoaDon (HoaDonBulder Builder)
    {
-       this.CTHD = Builder.CTHD;
+       this.dsCTHD = Builder.dsCTHD;
        this.Hearder = Builder.Hearder; 
    }
 
     @Override
     public String toString() {
-        return "HoaDon{" + "Hearder=" + Hearder + ", CTHD=" + CTHD + '}';
+        String  X = Hearder.toString();
+        for ( int i = 0;i<dsCTHD.size(); i++  )
+        {
+            X += dsCTHD.get(i).toString();
+        }
+        return  X;
     }
    
    public static class HoaDonBulder
    {
     HoaDonHeader Hearder;
-    ArrayList<CTHD> CTHD;
-
-        
-    public HoaDonBulder() 
-    {
-       this.CTHD = new ArrayList<>();
-    }
+    ArrayList<CTHD> dsCTHD = new ArrayList<>();
     
     public HoaDonBulder addHoaDonHearder(HoaDonHeader Hearder)
    {
@@ -44,7 +43,7 @@ public class HoaDon {
    }
     public HoaDonBulder addCTHD(CTHD CTHd)
    {
-       this.CTHD.add(CTHd) ;
+       this.dsCTHD.add(CTHd) ;
        return this;
    }
     public HoaDon Build()
