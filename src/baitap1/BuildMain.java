@@ -14,6 +14,7 @@ public class BuildMain {
         HoaDon hoaDon = new HoaDon.HoaDonBulder()
                             .addHoaDonHearder(new HoaDonHeader("HD00001", "12/5/1999", "Nguyễn Thế Phong"))
                             .addCTHD(new CTHD("Áo sơ mi nam tay dài", 1, 150000, 10))
+                            .addCTHD(new CTHD("Áo sơ mi nam ngắn dài", 2, 100000, 10))
                             .Build();
         System.out.println(hoaDon.toString());
     }
