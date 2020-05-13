@@ -45,5 +45,5 @@ public abstract class Shape {
         this.frame = frame;
     }
     
-    
+    public  abstract String Draw();
 }
