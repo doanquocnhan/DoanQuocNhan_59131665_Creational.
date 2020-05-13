@@ -10,5 +10,5 @@ package baitap3;
  * @author Nhan
  */
 public enum ShapeType {
-        brush,paper,frame
+        hinhtron,hinhchunhat,hinhtamgiac
 }
