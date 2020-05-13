@@ -23,42 +23,5 @@ public class ShapeFactory {
         }
         return null;
     }
-//    ShapeType type;
-//
-//    public void setType(ShapeType type) {
-//        this.type = type;
-//    }
-//    
-//    
-//    public ShapeFactory() {
-//    }
-//
-//    public Shape createShape() {
-//        switch(type)
-//        {
-//           case circle: return new Circle();
-//            case HinhVuong: return new Traingle();
-//            case Hinhchunhat: return new Rectangle();
-//        }
-//        return null;
-//    }
-    
-    
 }
-
-//public class ShapeFactory {
-//    ShapeType type;
-//
-//    public ShapeFactory(ShapeType type) {
-//        this.type = type;
-//    }
-//    
-//    
-//    
-//    public Shape createShape(ShapeType shapeType)
-//    {
-//        
-//    }
-//    
-//    
-//}
+ 
