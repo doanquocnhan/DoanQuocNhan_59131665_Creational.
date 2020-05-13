@@ -11,23 +11,23 @@ package baitap3;
  */
 public class Rectangle extends Shape{
     //Flelds
-    private static Rectangle Hinhchunhat;
+    private static Rectangle hinhchunhat;
     //constructor
     protected Rectangle() {
     }
     //Methods
-    public static Rectangle SingletonHinhchunhat()
+    public static Rectangle Singletonhinhchunhat()
     {
-        if(Hinhchunhat == null)
+        if(hinhchunhat == null)
         {
-            Hinhchunhat = new Rectangle();
+            hinhchunhat = new Rectangle();
         }
-        return Hinhchunhat;
+        return hinhchunhat;
     }
     
     @Override
     public String Draw() {
-        return "Ve Hinh Rectangle";
+        return "Ve Hinh Chữ Nhật";
     }
     
     
