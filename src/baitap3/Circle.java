@@ -11,7 +11,7 @@ package baitap3;
  */
 public class Circle extends Shape{
     
-    private static Shape circle;
+    private static Shape hinhtron;
 
     protected Circle() 
     {
@@ -20,11 +20,11 @@ public class Circle extends Shape{
     
      public static Shape SingletonCircle() 
      {
-        if (circle == null) 
+        if (hinhtron == null) 
         {
-            circle = new Circle();
+            hinhtron = new Circle();
         }
-        return circle;
+        return hinhtron;
     }
             
             
