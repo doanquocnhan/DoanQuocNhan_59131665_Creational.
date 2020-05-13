@@ -12,10 +12,11 @@ package baitap1;
 public class BuildMain {
     public static void main(String[] args) {
         HoaDon hoaDon = new HoaDon.HoaDonBulder()
-                            .addHoaDonHearder(new HoaDonHeader("HD00001", "12/5/1999", "Nguyễn Thế Phong"))
-                            .addCTHD(new CTHD("Áo sơ mi nam tay dài", 1, 150000, 10))
-                            .addCTHD(new CTHD("Áo sơ mi nam ngắn dài", 2, 100000, 10))
+                            .addHoaDonHearder(new HoaDonHeader("001", "25/5/1999", "Doan Quoc Nhan"))
+                            .addCTHD(new CTHD("Áo sơ mi nam tay dài", 1, 75000, 15))
+                            .addCTHD(new CTHD("Váy nữ màu hồng", 1, 150000, 10))
                             .Build();
+        
         System.out.println(hoaDon.toString());
     }
 }
