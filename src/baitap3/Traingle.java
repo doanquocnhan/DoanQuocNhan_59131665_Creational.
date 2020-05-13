@@ -12,22 +12,22 @@ package baitap3;
 public class Traingle extends Shape{
     
     //Flelds
-    private static Traingle HinhVuong;
+    private static Traingle hinhtamgiac;
     //constructor
     protected Traingle() {
     }
     //Methods
-    public static Traingle SingletonHinhVuong()
+    public static Traingle Singletonhinhtamgiac()
     {
-        if(HinhVuong == null)
+        if(hinhtamgiac == null)
         {
-            HinhVuong = new Traingle();
+            hinhtamgiac = new Traingle();
         }
-        return HinhVuong;
+        return hinhtamgiac;
     }
     @Override
     public String Draw() {
-        return "VE hinh Traingle ";
+        return "Vẽ hình Tam Giác ";
     }
     
     
