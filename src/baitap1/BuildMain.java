@@ -16,7 +16,7 @@ public class BuildMain {
                             .addCTHD(new CTHD("Áo sơ mi nam tay dài", 1, 75000, 15))
                             .addCTHD(new CTHD("Váy nữ màu hồng", 1, 150000, 10))
                             .Build();
-        
+       
         System.out.println(hoaDon.toString());
     }
 }
