@@ -13,7 +13,7 @@ public class Circle extends Shape{
     
     private static Shape circle;
 
-    public Circle() 
+    protected Circle() 
     {
     
     }
